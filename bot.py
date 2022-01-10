@@ -1,6 +1,6 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.types import InlinekeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 Bot = Client(
     "Forward remove bot",
@@ -19,7 +19,7 @@ __Iam a simple Auto Forward Tag message remover bot__
 
 START_BUTTONS = InlineKeyboardMarkup(
     [[
-        InlinekeyboardButton("Add me to your group", url="https://t.me/forwardremoveXDbot?startgroup=true")
+        InlineKeyboardButton("Add me to your group", url="https://t.me/forwardremoveXDbot?startgroup=true")
     ]]
 )
 
