@@ -34,12 +34,5 @@ async def start(bot, message):
 @Bot.on_message(filters.forwarded)
 async def forward(bot, message):
     await message.delete()
-
-a = "The Bot Has Started Sucessfully"
-b = "The bot has been down"
-if a in range:
-    print(a)
-else:
-    print(b)
     
 Bot.run()
