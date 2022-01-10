@@ -26,8 +26,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 
 @Auto.on_message(filters.command("start"))
 async def start(bot, message):
-    m=await message.reply_edit("Processing...")
-    n=await edit.m(
+    m=await message.reply_text("Processing...")
+    await edit.m(
     text=START_TXT.format(message.from_user.mention),
     reply_markup=START_BUTTONS,
     )
