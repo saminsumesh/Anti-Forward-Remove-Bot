@@ -9,6 +9,21 @@ Auto = Client(
  api_hash=os.environ.get("API_HASH")
   )
   
+START_TXT = """Hey {},
+This is a simple Autofoward Remove Bot 
+> Just add me to your chat and make me as admin
+> If anyone forwards a message with tag i will remove it
+
+**Made by @XD_Botz** ❤
+""" 
+
+START_BUTTONS = InlineKeyboardMarkup(
+ [[
+ InlineKeyboardButton("➕ Add me to your groups ➕", url="https://t.me/ForwardRemoveXDBot?startgroup=true")
+]])
+
+
+
 @Auto.on_message(filters.command("start"))
 async def start(bot, message):
     m=await message.reply_edit("Processing...")
