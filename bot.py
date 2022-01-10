@@ -31,7 +31,7 @@ async def start(bot, message):
         reply_markup=START_BUTTONS,
     )
 
-@Bot.on_message(filters.forward)
+@Bot.on_message(filters.forwarded)
 async def forward(bot, message):
     await message.delete()
 
