@@ -1,6 +1,7 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+import time 
 
 Bot = Client(
     "Forward remove bot",
@@ -25,8 +26,10 @@ START_BUTTONS = InlineKeyboardMarkup(
 
 @Bot.on_message(filters.command("start"))
 async def start(bot, message):
-    m=await message.reply_text("Processing...")
-    await m.edit(
+    m=await message.reply_text("▰▱▱")
+    n=await m.edit("▰▰▱")
+    o=await n.edit("▰▰▰")
+    await o.edit(
         text=START_TXT.format(message.from_user.mention),
         reply_markup=START_BUTTONS,
     )
