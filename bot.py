@@ -12,8 +12,8 @@ Bot = Client(
 
 START_TXT = """Hello {},
 __Iam a simple Auto Forward Tag message remover bot__
-> Just add me to your groups and make me as admin.
-> I will only remove message with forward tag!
+➣ Just add me to your groups and make me as admin.
+➣ I will only remove message with forward tag!
 
 **Made by @XD_Botz**
 """
