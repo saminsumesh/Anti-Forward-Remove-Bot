@@ -36,6 +36,6 @@ async def start(bot, message):
 
 @Bot.on_message(filters.forwarded)
 async def forward(bot, message):
-    await message.delete("This group doesn't allow forward messages")
+    await message.delete("This group doesn't allow forward messages"),
     await message.delete
 Bot.run()
